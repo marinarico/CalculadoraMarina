@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculadora</title>
+        <link rel="stylesheet" type="text/css" href="css.css" />
+        <script language="javascript" type="text/javascript" src="javascript.js"> </script>
+    </head>
+    <body>
+        <center>
+        <h1> Mi primera calculadora </h1>
+        <table id="calculadora">
+<!-- FILA RESULTADOS-->
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="valor_numero" maxlength="20" value="0" class="resultados" readonly="true">
+                </td>
+            </tr>
+<!-- FILA 1 - BOTONES-->
+            <tr>
+                <td colspan="2">
+                    <input type="Button" id="potencia" value="exp" class="boton_largo funcion" onclick="operar(5)">
+                </td>
+                <td>
+                    <input type="Button" id="Dividir" value="/" class="boton funcion" onclick="operar(4)">
+                </td>
+                <td>
+                    <input type="Button" id="Multiplicar" value="x" class="boton funcion" onclick="operar(3)">
+                </td>
+            </tr>
+
+<!-- FILA 2 - BOTONES-->
+            <tr>
+                <td>
+                    <input type="Button" id="7" value="7" class="boton" onclick="darNumero('7')">
+                </td>
+                <td>
+                    <input type="Button" id="8" value="8" class="boton" onclick="darNumero('8')">
+                </td>
+                <td>
+                    <input type="Button" id="9" value="9" class="boton" onclick="darNumero('9')">
+                </td>
+                <td>
+                    <input type="Button" id="Restar" value="-" class="boton funcion" onclick="operar(2)">
+                </td>
+            </tr>
+<!-- FILA 3 - BOTONES-->
+            <tr>
+                <td>
+                    <input type="Button" id="4" value="4" class="boton" onclick="darNumero('4')">
+                </td>
+                <td>
+                    <input type="Button" id="5" value="5" class="boton" onclick="darNumero('5')">
+                </td>
+                <td>
+                    <input type="Button" id="6" value="6" class="boton" onclick="darNumero('6')">
+                </td>
+                <td>
+                    <input type="Button" id="Sumar" value="+" class="boton funcion" onclick="operar(1)">
+                </td>
+            </tr>
+<!-- FILA 4 - BOTONES-->
+            <tr>
+                <td>
+                    <input type="Button" id="1" value="1" class="boton" onclick="darNumero('1')">
+                </td>
+                <td>
+                    <input type="Button" id="2" value="2" class="boton" onclick="darNumero('2')">
+                </td>
+                <td>
+                    <input type="Button" id="3" value="3" class="boton" onclick="darNumero('3')">
+                </td>
+                <td>
+                    <input type="Button" id="igual" value="=" class="boton funcion" onclick="esIgual()">
+                </td>
+            </tr>
+<!-- FILA 5 - BOTONES-->
+            <tr>
+                <td colspan="2">
+                    <input type="Button" id="0" value="0" class="boton_largo" onclick="darNumero('0')">
+                </td>
+                <td>
+                    <input type="Button" id="," value="," class="boton" onclick="darComa()">
+                </td>
+                <td>
+                    <input type="Button" id="C" value="C" class="boton funcion" onclick="darC()">
+                </td>
+            </tr>
+        </table></center>
+    </body>
+</html>
